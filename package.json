@@ -14,7 +14,8 @@
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "pretty-file-icons": "^2.2.1",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+     "nodemon": "^2.0.8"
   },
   "devDependencies": {
     "nodemon": "^2.0.8"
