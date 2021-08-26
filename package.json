@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "pretty-file-icons": "^2.2.1",

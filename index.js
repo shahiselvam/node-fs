@@ -1,12 +1,14 @@
 //requiring path and fs modules
-const  http = require('http');
+const express = require("express");
+const app = express();
 const path = require('path');
 const fs = require('fs');
 const prettyFileIcons = require('pretty-file-icons');
+require("dotenv").config();
 
 
 
-const server = http.createServer((req, res) => {
+app.use((req, res) => {
 try{
 var arr = [];
 fs.readdir("../", (err, files) => {
@@ -43,8 +45,9 @@ catch(err){
 }
   
 });
+const port = process.env.PORT || 7000;
 
-server.listen(5000 , () => {
-    console.log("port started at 5000")
+app.listen(port , () => {
+    console.log(`port started at ${port}`)
     
     } );
